@@ -1,0 +1,54 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.5, pytest-7.1.3, pluggy-1.6.0 -- C:\Users\dw020\AppData\Local\Programs\Python\Python313\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\dw020\OneDrive\Music\Playlists\python-p4-mock-challenge-cosmic-challenge, configfile: pytest.ini
+plugins: Faker-14.2.0
+collecting ... collected 17 items / 1 error
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_output.txt _______________________
+..\..\..\..\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py:546: in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+..\..\..\..\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py:633: in read_text
+    return f.read()
+<frozen codecs>:325: in decode
+    ???
+E   UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+============================== warnings summary ===============================
+..\..\..\..\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\rules.py:726: 13 warnings
+  C:\Users\dw020\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\rules.py:726: DeprecationWarning: ast.Str is deprecated and will be removed in Python 3.14; use ast.Constant instead
+    parts = parts or [ast.Str("")]
+
+..\..\..\..\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\rules.py:723: 26 warnings
+  C:\Users\dw020\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\rules.py:723: DeprecationWarning: ast.Str is deprecated and will be removed in Python 3.14; use ast.Constant instead
+    _convert(elem) if is_dynamic else ast.Str(s=elem)
+
+..\..\..\..\AppData\Local\Programs\Python\Python313\Lib\ast.py:602: 26 warnings
+  C:\Users\dw020\AppData\Local\Programs\Python\Python313\Lib\ast.py:602: DeprecationWarning: Constant.__init__ got an unexpected keyword argument 's'. Support for arbitrary keyword arguments is deprecated and will be removed in Python 3.15.
+    return Constant(*args, **kwargs)
+
+..\..\..\..\AppData\Local\Programs\Python\Python313\Lib\ast.py:602: 26 warnings
+  C:\Users\dw020\AppData\Local\Programs\Python\Python313\Lib\ast.py:602: DeprecationWarning: Attribute s is deprecated and will be removed in Python 3.14; use value instead
+    return Constant(*args, **kwargs)
+
+..\..\..\..\AppData\Local\Programs\Python\Python313\Lib\ast.py:602: 26 warnings
+  C:\Users\dw020\AppData\Local\Programs\Python\Python313\Lib\ast.py:602: DeprecationWarning: Constant.__init__ missing 1 required positional argument: 'value'. This will become an error in Python 3.15.
+    return Constant(*args, **kwargs)
+
+..\..\..\..\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\rules.py:730: 32 warnings
+  C:\Users\dw020\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\rules.py:730: DeprecationWarning: ast.Str is deprecated and will be removed in Python 3.14; use ast.Constant instead
+    if isinstance(p, ast.Str) and isinstance(ret[-1], ast.Str):
+
+..\..\..\..\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\rules.py:731: 28 warnings
+  C:\Users\dw020\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\rules.py:731: DeprecationWarning: Attribute s is deprecated and will be removed in Python 3.14; use value instead
+    ret[-1] = ast.Str(ret[-1].s + p.s)
+
+..\..\..\..\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\rules.py:731: 14 warnings
+  C:\Users\dw020\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\rules.py:731: DeprecationWarning: ast.Str is deprecated and will be removed in Python 3.14; use ast.Constant instead
+    ret[-1] = ast.Str(ret[-1].s + p.s)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+ERROR test_output.txt - UnicodeDecodeError: 'utf-8' codec can't decode byte 0...
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+======================= 191 warnings, 1 error in 4.29s ========================
